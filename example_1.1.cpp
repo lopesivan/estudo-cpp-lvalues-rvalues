@@ -1,14 +1,3 @@
-#include <iostream>
-#include <vector>
-
-//
-// main
-//
-int main() {
-
-  std::vector<int> v{1, 2, 3, 4, 5, 6};
-
-  return 0; // success return
-}
-
-// vim: set ts=4 sw=4 tw=78 ft=cpp:
+int a = 10;     // 'a' is an lvalue, '10' is an rvalue
+int b = a;      // 'b' is an lvalue, 'a' is an lvalue
+int c = a + b;  // 'a + b' is an rvalue

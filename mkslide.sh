@@ -27,18 +27,11 @@ EOF
 
 prefix=example_1.
 
-ls ${prefix}*.cpp |
+ls ${prefix}*.* |
     sort -n -t\. -k 2 |
-    sed \
-        -e 'h' \
-        -e 'g;s/^/\n---\n# /' \
-        -e 'p' \
-        -e 'i\`\`\`file' \
-        -e 'x;s/^/path: .\//' \
-        -e 'alang: cpp\n\`\`\`'
+    ./f.sed
 
 cat <<EOF
-
 ---
 # Contato
 
