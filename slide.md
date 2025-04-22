@@ -21,6 +21,13 @@ lang: cpp
 path: ./example_1.2.md
 lang: markdown
 ```
+
+---
+# example_1.3.cpp
+```file
+path: ./example_1.3.cpp
+lang: cpp
+```
 ---
 # Contato
 
